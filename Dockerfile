@@ -1,5 +1,9 @@
 FROM mhart/alpine-node:8
 RUN mkdir -p /root/data
-WORKDIR /root/data
-COPY /home-rpi4-client/dist /home-rpi4-client/dist
-COPY /home-rpi4-server/bin /home-rpi4-server/bin
+WORKDIR /
+COPY /home-rpi4-client/dist/* /root/data/home-rpi4-client/dist/
+COPY /home-rpi4-server/bin/ /root/data/home-rpi4-server/bin/
+COPY /home-rpi4-server/config/ /root/data/home-rpi4-server/config/
+COPY /home-rpi4-server/ssl* /root/data/home-rpi4-server/
+COPY /home-rpi4-server/node_modules/ /root/data/home-rpi4-server/node_modules
+WORKDIR /root/data/home-rpi4-server/
