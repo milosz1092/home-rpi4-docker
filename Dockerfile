@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:8
+FROM yobasystems/alpine-nodejs:arm32v7
 RUN mkdir -p /root/data
 WORKDIR /
 COPY /home-rpi4-client/dist/* /root/data/home-rpi4-client/dist/
