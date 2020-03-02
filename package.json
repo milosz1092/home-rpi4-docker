@@ -5,7 +5,8 @@
   "main": "docker_deploy.sh",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docker:deploy":  "bash docker_deploy.sh"
+    "docker:deploy":  "bash docker_deploy.sh",
+    "git:cloneSubmodules": "bash git_submodules.sh"
   },
   "author": "",
   "license": "ISC"

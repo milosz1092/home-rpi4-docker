@@ -1,0 +1,7 @@
+[submodule "home-rpi4-client"]
+	path = home-rpi4-client
+	url = https://github.com/milosz1092/home-rpi4-client.git
+
+[submodule "home-rpi4-server"]
+	path = home-rpi4-server
+	url = https://github.com/milosz1092/home-rpi4-server.git
