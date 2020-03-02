@@ -3,6 +3,7 @@
 cd home-rpi4-client
 npx npm-force-resolutions
 npm install
+npm run build:prod
 
 cd ../home-rpi4-server
 npm install
