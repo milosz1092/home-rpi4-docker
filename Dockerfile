@@ -1,4 +1,4 @@
-FROM arm32v7/node:10-alpine
+FROM node:12.17.0-alpine
 RUN mkdir -p /root/data
 WORKDIR /
 COPY /home-rpi4-client/dist/ /root/data/home-rpi4-client/dist/
